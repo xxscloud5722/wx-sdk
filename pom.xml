@@ -187,14 +187,5 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>rdc-releases</id>
-            <url>https://repo.rdc.aliyun.com/repository/73562-release-lmXjO7/</url>
-        </repository>
-        <repository>
-            <id>rdc-snapshots</id>
-            <url>https://repo.rdc.aliyun.com/repository/73562-snapshot-Ml4niL/</url>
-        </repository>
-    </repositories>
+
 </project>

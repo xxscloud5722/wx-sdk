@@ -106,7 +106,7 @@ public class WeChatSDK {
     private <T> T post(String url, Object body, Class<T> clazz) throws IOException {
         final HttpPost httpPost = new HttpPost(url);
         httpPost.setHeader("Content-Type", "application/json");
-        httpPost.setEntity(new StringEntity(JSONObject.toJSONString(body)));
+        httpPost.setEntity(new StringEntity(JSONObject.toJSONString(body), StandardCharsets.UTF_8));
         log.info("[微信SDK] 请求地址: " + url);
         final HttpResponse response = httpClient.execute(httpPost);
         if (response.getStatusLine().getStatusCode() != 200) {
